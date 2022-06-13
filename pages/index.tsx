@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Header from "../components/Header/Header";
-import AddTransaction from "../components/Transaction/AddTransaction";
+import LendingForm from "../components/Loan/LendingForm";
 
 const Home: NextPage = () => {
 	return (
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 				h={'100vh'}
 			>
 				<Header />
-				<AddTransaction />
+				<LendingForm />
 			</Box>
 		</>
 	);

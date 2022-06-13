@@ -1,7 +1,7 @@
 import { Button } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons"
 
-const AddTransaction = () => {
+const AddTransaction = ({onOpen} : {onOpen: () => void}) => {
 	return (
 		<>
 			<Button
@@ -9,6 +9,7 @@ const AddTransaction = () => {
 				pos={'absolute'}
 				bottom={'30px'}
 				right={'15px'}
+				onClick={onOpen}
 			>
 				<AddIcon />
 			</Button>
