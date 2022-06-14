@@ -20,7 +20,7 @@ const LendingForm = () => {
 			<AddTransaction onOpen={onOpen} />
 			<Drawer placement={"bottom"} isOpen={isOpen} onClose={onClose}>
 				<DrawerOverlay />
-				<DrawerContent bg={'#28282B'}>
+				<DrawerContent bg={'#28282B'} borderRadius={'25px 25px 0 0'}>
 					<DrawerHeader borderBottomWidth="1px">
 						<Text color={'white'}>Add Transaction</Text>
 					</DrawerHeader>
