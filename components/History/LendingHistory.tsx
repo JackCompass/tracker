@@ -9,8 +9,8 @@ const LendingHistory = () => {
 		<>
 			<Flex flexWrap={"wrap"} mt={"50px"} gap={"5px"}>
 				{transactions?.map(
-					(transaction: TransactionDetailsInterface) => {
-						return <HistoryCard transaction={transaction} />;
+					(transaction: TransactionDetailsInterface, index: number) => {
+						return <HistoryCard key={index} transaction={transaction} />;
 					}
 				)}
 			</Flex>
